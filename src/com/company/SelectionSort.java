@@ -30,6 +30,12 @@ public class SelectionSort {
 
 
 /**
+ * Time Complexity = n-1 + n-2 + ... + 2 + 1 = ( (1+n-1) * (n-1) ) / 2 = ( n*(n-1) ) / 2 = O(n^2)
+ * Space Complexity = O(1)
+ */
+
+
+/**
  * Can simplify the checking condition in the beginning because if the array == null, you can still return array
    since returning null is ok if the return type is int[].
  * in the swap, temp = array[i], not i. If you let temp=i, you only keep a box, but the thing inside it can be changed

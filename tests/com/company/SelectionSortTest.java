@@ -40,4 +40,15 @@ class SelectionSortTest {
         }
     }
 
+
+    @Test
+    void selectionSort4() {
+        int[] array = {2,4,1,5,3};
+
+        SelectionSort test = new SelectionSort();
+        int[] result = test.selectionSort(array);
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+        }
+    }
 }
