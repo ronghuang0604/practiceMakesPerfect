@@ -50,3 +50,19 @@ public class MergeSort {
         }
     }
 }
+
+
+/**
+ * Time Complexity
+ *      There are two phases, the split and the merge
+ *      During the split, what we actually did was just to find the middle point, and that takes O(1).
+ *      first level cut once, second level cut twice...last level cut n times. Therefore, O(n) for the split.
+ *
+ *      During the merge, merge n elements take O(n). Since there are logn levels in total, O(nlogn)
+ *      Therefore, the total time complexity is O(nlogn)
+ *
+ * Space Complexity
+ *      During the split: callstack logn levels. Therefore, O(logn)
+ *      During the merge: We kept a helper array, so O(n).
+ *      Hence, the total space complexity = O(n)
+ */
