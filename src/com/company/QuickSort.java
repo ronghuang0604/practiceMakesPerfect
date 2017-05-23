@@ -56,6 +56,8 @@ public class QuickSort {
 /**
  * Time Complexity = O(nlogn) on average. // logn levels, each level O(n)
  *                 = O(n^2) worse case  // (n-1) levels, each level O(n)
+ * Space Complexity = O(logn) on average
+ *                    O(n) worse case
  */
 
 
