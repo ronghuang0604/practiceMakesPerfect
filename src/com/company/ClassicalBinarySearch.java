@@ -4,7 +4,7 @@ package com.company;
  * Created by rong on 5/22/17.
  */
 public class ClassicalBinarySearch {
-    public int classicalBS(int[] array, int target) {
+    public int classicalBS_iterative(int[] array, int target) {
 
         if (array == null || array.length == 0) {
             return -1;
@@ -24,4 +24,38 @@ public class ClassicalBinarySearch {
          }
          return -1;
     }
+
+    public int classicalBS_recursive(int[] array, int target) {
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        int left = 0;
+        int right = array.length - 1;
+        return classicalBS_recursive(array, left, right, target);
+    }
+
+    private int classicalBS_recursive(int[] array, int left, int right, int target) {
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (array[mid] == target) {
+                return mid;
+            }else if(array[mid] < target) {
+                return classicalBS_recursive(array, mid + 1, right, target);
+            } else {
+                return classicalBS_recursive(array, left, mid - 1, target);
+            }
+        }
+        return -1;
+    }
 }
+
+
+///**
+// * Iterative method:
+// *      TimeComplexity = O(logn)
+// *      SpaceComplexity = O(1)
+// *
+// * Recursive method:
+// *      TimeComplexity = n + n/2 + n/4 + ... + 1 = O(n)
+// *      SpaceComlexity = O(logn)
+// */

@@ -13,7 +13,7 @@ class ClassicalBinarySearchTest {
         ClassicalBinarySearch test = new ClassicalBinarySearch();
         int[] array = {1,2,3,4,5};
         int target = 3;
-        System.out.println(test.classicalBS(array, target));
+        System.out.println(test.classicalBS_iterative(array, target));
     }
 
     @Test
@@ -21,7 +21,7 @@ class ClassicalBinarySearchTest {
         ClassicalBinarySearch test = new ClassicalBinarySearch();
         int[] array = {1,2,3,4,5};
         int target = 7;
-        System.out.println(test.classicalBS(array, target));
+        System.out.println(test.classicalBS_iterative(array, target));
     }
 
     @Test
@@ -29,7 +29,7 @@ class ClassicalBinarySearchTest {
         ClassicalBinarySearch test = new ClassicalBinarySearch();
         int[] array = {1,2,3,4,5};
         int target = 1;
-        System.out.println(test.classicalBS(array, target));
+        System.out.println(test.classicalBS_iterative(array, target));
     }
 
     @Test
@@ -37,6 +37,22 @@ class ClassicalBinarySearchTest {
         ClassicalBinarySearch test = new ClassicalBinarySearch();
         int[] array = {1,2,3,4,5};
         int target = 2;
-        System.out.println(test.classicalBS(array, target));
+        System.out.println(test.classicalBS_iterative(array, target));
+    }
+
+    @Test
+    void classicalBS_recursive1() {
+        ClassicalBinarySearch test = new ClassicalBinarySearch();
+        int[] array = {1,2,3,4,5};
+        int target = 2;
+        System.out.println(test.classicalBS_recursive(array, target));
+    }
+
+    @Test
+    void classicalBS_recursive2() {
+        ClassicalBinarySearch test = new ClassicalBinarySearch();
+        int[] array = {1,1,3,4,5};
+        int target = 3;
+        System.out.println(test.classicalBS_recursive(array, target));
     }
 }
