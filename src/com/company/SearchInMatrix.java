@@ -27,3 +27,9 @@ public class SearchInMatrix {
         return new int[] { -1, -1 };
     }
 }
+
+
+/**
+ * Time Complexity = O(log(m*n)) because every time the size cut down in half.
+ * Space Complexity = O(1)
+ */

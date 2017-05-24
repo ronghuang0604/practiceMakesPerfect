@@ -58,5 +58,5 @@ public class ClassicalBinarySearch {
  *
  * Recursive method:
  *      TimeComplexity = O(logn) // same reason as above
- *      SpaceComplexity = O(logn) // level of the recursion tree. 
+ *      SpaceComplexity = O(logn) // level of the recursion tree.
  */
