@@ -50,12 +50,13 @@ public class ClassicalBinarySearch {
 }
 
 
-///**
-// * Iterative method:
-// *      TimeComplexity = O(logn)
-// *      SpaceComplexity = O(1)
-// *
-// * Recursive method:
-// *      TimeComplexity = n + n/2 + n/4 + ... + 1 = O(n)
-// *      SpaceComlexity = O(logn)
-// */
+/**
+ * Iterative method:
+ *      TimeComplexity = O(logn)
+ *          Every time, the searching space is cut down half, i.e. 16, 8, 4, 2, 1. => 2^? = 16 => log 16 => logn
+ *      SpaceComplexity = O(1)
+ *
+ * Recursive method:
+ *      TimeComplexity = O(logn) // same reason as above
+ *      SpaceComplexity = O(logn) // level of the recursion tree. 
+ */
