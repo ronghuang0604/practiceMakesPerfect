@@ -20,6 +20,12 @@ class QueueByTwoStacksTest {
         test.poll();
         System.out.println(test.peek()); // 5
         System.out.println(test.isEmpty()); // false
+        test.poll();
+        test.poll();
+        System.out.println(test.peek());
+        System.out.println(test.isEmpty());
+        test.poll();
+        System.out.println(test.peek());
 
     }
 

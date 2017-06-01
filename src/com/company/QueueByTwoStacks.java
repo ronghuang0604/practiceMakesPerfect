@@ -21,14 +21,14 @@ public class QueueByTwoStacks {
         if (queueHead.isEmpty()) {
             move();
         }
-        return queueHead.pop();
+        return queueHead.pollFirst();
     }
 
     public Integer peek() {
         if (queueHead.isEmpty()) {
             move();
         }
-        return queueHead.peek();
+        return queueHead.peekFirst();
     }
 
     public int size() {
