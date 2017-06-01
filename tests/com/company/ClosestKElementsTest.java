@@ -43,4 +43,16 @@ class ClosestKElementsTest {
             System.out.println(result[i]);
         }
     }
+
+    @Test
+    public void closestKTest3() {
+        int[] array = {7,8};
+        int k = 2;
+        int target = 6;
+        ClosestKElements test = new ClosestKElements();
+        int[] result = test.closestK(array,k, target);
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+        }
+    }
 }

@@ -13,6 +13,8 @@ public class ClosestKElements {
 
         // need to find the two neighbours of the target
         int left = leftNeighbourIndex(array, target);
+        System.out.println("left: " + left);
+
         int right = left + 1;
 
         int[] result = new int[k];
