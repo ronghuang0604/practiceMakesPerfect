@@ -21,7 +21,7 @@ public class StackWithMin {
     public void push(int element) {
         stack.push(element);
         if ( minStack.isEmpty() || ( element <= minStack.peekFirst() ) ) {
-            minStack.push(element);
+            minStack.offerFirst(element);
         }
     }
 
@@ -43,7 +43,7 @@ public class StackWithMin {
 
 
 /**
- * Things to remember: should use Deque instead of LinkedList because it's more general 
+ * Things to remember: should use Deque instead of LinkedList because it's more general
  *
  * */
 
