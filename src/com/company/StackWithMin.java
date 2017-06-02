@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Deque;
 import java.util.LinkedList;
 
 /**
@@ -9,8 +10,8 @@ import java.util.LinkedList;
 // Method 1
 public class StackWithMin {
 
-    LinkedList<Integer> stack;
-    LinkedList<Integer> minStack;
+    Deque<Integer> stack;
+    Deque<Integer> minStack;
 
     public StackWithMin() {
         stack = new LinkedList<>();
@@ -19,7 +20,7 @@ public class StackWithMin {
 
     public void push(int element) {
         stack.push(element);
-        if ( minStack.isEmpty() || ( !minStack.isEmpty() && element <= minStack.peekFirst() ) ) {
+        if ( minStack.isEmpty() || ( element <= minStack.peekFirst() ) ) {
             minStack.push(element);
         }
     }
@@ -40,6 +41,11 @@ public class StackWithMin {
     }
 }
 
+
+/**
+ * Things to remember: should use Deque instead of LinkedList because it's more general 
+ *
+ * */
 
 
 
