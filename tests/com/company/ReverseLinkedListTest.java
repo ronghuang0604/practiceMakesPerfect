@@ -14,6 +14,9 @@ class ReverseLinkedListTest {
         node1.next = new ListNode(2);
         node1.next.next = new ListNode(3);
 
-//        ReverseLinkedList test = new ReverseLinkedList(node1);
+        ReverseLinkedList test = new ReverseLinkedList();
+//        ListNode head = test.iterativeMethod(node1);
+
+
     }
 }

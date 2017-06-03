@@ -15,7 +15,7 @@ public class ReverseLinkedList {
         }
     }
 
-    public ListNode ReverseLinkedList(ListNode head) {
+    public ListNode iterativeMethod(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -37,6 +37,11 @@ public class ReverseLinkedList {
      */
 
 //    public recursiveMethod(ListNode head) {
+//        if (head == null || head.next == null) {
+//            return head;
+//        }
 //
+//        // base case: when head is null
+//        if (head)
 //    }
 }
