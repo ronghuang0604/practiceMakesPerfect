@@ -34,7 +34,7 @@ public class TopKFrequentWords {
                 continue;
             }
         }
-        return getFreqArray(minHeap, k);
+        return getFreqArray(minHeap);
     }
 
     private HashMap<String, Integer> getFreqMap(String[] combo) {
@@ -51,11 +51,22 @@ public class TopKFrequentWords {
     }
 
 
-    private String[] getFreqArray(PriorityQueue<Map.Entry<String, Integer>> minHeap, int k) {
-        String[] freqArray = new String[k];
+    private String[] getFreqArray(PriorityQueue<Map.Entry<String, Integer>> minHeap) {
+        String[] freqArray = new String[minHeap.size()];
         for (int i = minHeap.size() - 1; i >= 0; i--) {
             freqArray[i] = minHeap.poll().getKey();
         }
         return freqArray;
     }
 }
+
+
+/**
+ * Time Complexity:
+ * build a hash map used O(n)
+ * build a minHeap: in the worse case, we used (n-k) times of offer and poll, and offer and poll cost O(logk)
+ *              so, O( (n-k) logk )
+ * return freqArray used O(k) in the worse case
+ *
+ * Therefore, total time complexity is O(n+(n-k)logk+k) = O(n+nlogk)
+ */
