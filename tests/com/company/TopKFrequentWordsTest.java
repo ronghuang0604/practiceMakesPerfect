@@ -40,4 +40,15 @@ class TopKFrequentWordsTest {
         }
     }
 
+    @Test
+    public void test4() {
+//        String[] Composition = {"a", "a", "b", "b", "b", "b", "c", "c", "c", "d"};
+//        TopKFrequentWords test = new TopKFrequentWords();
+//        String[] result = test.topKFrequent(Composition, 5);
+//        for (int i = 0; i < result.length; i++) {
+//            System.out.println(result[i]);
+//        }
+
+        System.out.println(7 ^ 3);
+    }
 }
