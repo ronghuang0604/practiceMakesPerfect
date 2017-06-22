@@ -5,8 +5,10 @@ package com.company;
  */
 public class LongestAscendingSubArray {
     public int longest(int[] array) {
-        if (array == null || array.length == 0) {
+        if (array == null) {
             return -1;
+        } else if (array.length == 0) {
+            return 0;
         }
         int curMax = 1;
         int globalMax = 1;
